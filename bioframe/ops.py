@@ -306,6 +306,7 @@ def _overlap_intidxs(df1, df2, how="left", cols1=None, cols2=None, on=None):
                 ends1[df1_group_idxs],
                 starts2[df2_group_idxs],
                 ends2[df2_group_idxs],
+                closed=True
             )
 
             # Convert local per-chromosome indices into the
